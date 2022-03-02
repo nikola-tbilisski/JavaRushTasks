@@ -1,0 +1,36 @@
+package com.javarush.task.task28.task2805;
+
+/*
+Приоритеты в Threads
+*/
+
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int thrPrior = 1;
+        for (int i = 0; i < 12; i++) {
+            MyThread myThread = new MyThread();
+
+            myThread.setPriority(thrPrior);
+            System.out.print(myThread.getPriority() + " ");
+            thrPrior++;
+            if(thrPrior > 10) thrPrior = 1;
+        }
+        //output
+        //1 2 3 4 5 6 7 8 9 10 1 2
+
+        System.out.println();
+        ThreadGroup group = new ThreadGroup("someName");
+        group.setMaxPriority(7);
+        for (int i = 0; i < 12; i++) {
+            MyThread myThread = new MyThread(group, "name" + i);
+            myThread.setPriority((int) (1 + (Math.random() * (group.getMaxPriority()))));
+            System.out.print(myThread.getPriority() + " ");
+        }
+        //output
+        //3 4 5 6 7 7 7 7 1 2 3 4
+    }
+
+}
