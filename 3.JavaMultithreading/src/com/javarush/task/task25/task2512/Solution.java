@@ -1,9 +1,6 @@
 package com.javarush.task.task25.task2512;
 
-import java.util.LinkedList;
-import java.util.List;
-
-/* 
+/*
 Живем своим умом
 */
 

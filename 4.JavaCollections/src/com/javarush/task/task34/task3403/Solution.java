@@ -4,8 +4,6 @@ package com.javarush.task.task34.task3403;
 Разложение на множители с помощью рекурсии
 */
 
-import java.util.Arrays;
-
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();

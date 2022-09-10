@@ -1,7 +1,5 @@
 package com.javarush.task.task26.task2602;
 
-import com.javarush.task.task29.task2909.human.Soldier;
-
 import java.util.Set;
 import java.util.TreeSet;
 

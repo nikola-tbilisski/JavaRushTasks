@@ -1,8 +1,6 @@
 package com.javarush.task.task26.task2603;
 
-import javax.swing.plaf.nimbus.State;
 import java.util.*;
-import java.util.stream.Stream;
 
 /* 
 Убежденному убеждать других не трудно

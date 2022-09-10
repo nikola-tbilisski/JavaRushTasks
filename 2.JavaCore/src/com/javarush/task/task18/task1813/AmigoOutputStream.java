@@ -3,7 +3,6 @@ package com.javarush.task.task18.task1813;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 /* 
 AmigoOutputStream

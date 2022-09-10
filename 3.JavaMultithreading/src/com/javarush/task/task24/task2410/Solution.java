@@ -2,7 +2,6 @@ package com.javarush.task.task24.task2410;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Locale;
 
 /* 
 Рефакторинг, анонимные классы

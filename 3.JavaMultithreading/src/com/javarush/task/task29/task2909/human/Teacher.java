@@ -1,8 +1,5 @@
 package com.javarush.task.task29.task2909.human;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Teacher extends UniversityPerson {
     //private List<Human> children = new ArrayList<>(); //Task1: children List removed from Teacher Class
     private int numberOfStudents;

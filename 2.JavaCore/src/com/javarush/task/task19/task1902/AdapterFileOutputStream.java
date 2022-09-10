@@ -38,9 +38,5 @@ public class AdapterFileOutputStream implements AmigoStringWriter
         public static void main(String[] args) {
 
     }
-
-        public interface AmigoStringWriter{
-
-    }
 }
 

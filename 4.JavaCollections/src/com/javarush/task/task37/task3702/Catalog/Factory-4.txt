@@ -1,12 +1,17 @@
 Фабрики (4)
-1. В корне задачи создай интерфейс AbstractFactory, в который вынеси общий в фабриках метод.
+1. В корне задачи создай интерфейс AbstractFactory,
+   в который вынеси общий в фабриках метод.
 
 2. Реализуй интерфейс AbstractFactory в обеих фабриках.
 
-3. В корне задачи создай класс FactoryProducer, в котором создай публичный статический энум HumanFactoryType со значениями MALE, FEMALE.
+3. В корне задачи создай класс FactoryProducer,
+   в котором создай публичный статический энум HumanFactoryType
+   со значениями MALE, FEMALE.
 
-4. В FactoryProducer создай публичный статический метод getFactory с аргументом HumanFactoryType.
-Этот метод должен возвращать одну из фабрик: для ключа MALE - MaleFactory, для FEMALE - FemaleFactory.
+4. В FactoryProducer создай публичный статический метод
+   getFactory с аргументом HumanFactoryType.
+   Этот метод должен возвращать одну из фабрик:
+   для ключа MALE - MaleFactory, для FEMALE - FemaleFactory.
 
 Молодец, Фабрика фабрик готова! Это паттерн Abstract Factory.
 В коде тебе не важно, какая фабрика используется.
@@ -22,6 +27,9 @@
 Requirements:
 1. Класс MaleFactory должен поддерживать интерфейс AbstractFactory.
 2. Класс FemaleFactory должен поддерживать интерфейс AbstractFactory.
-3. В классе FactoryProducer должен быть создан enum HumanFactoryType со значениями MALE, FEMALE.
-4. Метод getFactory в классе FactoryProducer должен принимать один параметр типа HumanFactoryType.
-5. Метод getFactory в классе FactoryProducer должен возвращать одну из фабрик в зависимости от принятого параметра.
+3. В классе FactoryProducer должен быть создан enum HumanFactoryType
+    со значениями MALE, FEMALE.
+4. Метод getFactory в классе FactoryProducer должен принимать
+   один параметр типа HumanFactoryType.
+5. Метод getFactory в классе FactoryProducer должен возвращать
+   одну из фабрик в зависимости от принятого параметра.

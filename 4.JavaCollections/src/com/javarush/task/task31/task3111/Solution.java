@@ -18,7 +18,7 @@ public class Solution {
         searchFileVisitor.setPartOfName("amigo");
         searchFileVisitor.setPartOfContent("programmer");
         searchFileVisitor.setMinSize(500);
-        searchFileVisitor.setMaxSize(10000);
+        searchFileVisitor.setMaxSize(140000000);
 
         Files.walkFileTree(Paths.get("D:/SecretFolder"), searchFileVisitor);
 

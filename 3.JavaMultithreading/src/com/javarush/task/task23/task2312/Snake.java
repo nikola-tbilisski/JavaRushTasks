@@ -1,7 +1,6 @@
 package com.javarush.task.task23.task2312;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Класс змея

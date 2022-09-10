@@ -1,6 +1,5 @@
 package com.javarush.task.task18.task1814;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 

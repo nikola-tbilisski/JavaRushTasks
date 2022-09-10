@@ -12,8 +12,8 @@ public class Solution {
         ImageReader reader = ImageReaderFactory.getImageReader(ImageTypes.JPG);
         ImageReader reader2 = ImageReaderFactory.getImageReader(ImageTypes.BMP);
         ImageReader reader3 = ImageReaderFactory.getImageReader(ImageTypes.PNG);
-        ImageReader reader4 = ImageReaderFactory.getImageReader(null);
-        System.out.println(reader.getClass().getSimpleName()+" "+reader2.getClass().getSimpleName()+" "+
+        //ImageReader reader4 = ImageReaderFactory.getImageReader(null);
+        System.out.println(reader.getClass().getSimpleName() + " " + reader2.getClass().getSimpleName() + " " +
                 reader3.getClass().getSimpleName());
     }
 }

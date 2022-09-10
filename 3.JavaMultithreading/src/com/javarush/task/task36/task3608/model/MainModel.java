@@ -5,7 +5,6 @@ import com.javarush.task.task36.task3608.model.service.UserService;
 import com.javarush.task.task36.task3608.model.service.UserServiceImpl;
 
 
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 public class MainModel implements Model{

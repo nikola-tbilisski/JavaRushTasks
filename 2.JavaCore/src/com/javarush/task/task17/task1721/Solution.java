@@ -1,9 +1,7 @@
 package com.javarush.task.task17.task1721;
 
-import javax.smartcardio.ATR;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /* 

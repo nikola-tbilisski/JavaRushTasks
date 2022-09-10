@@ -4,8 +4,6 @@ package com.javarush.task.task17.task1714;
 Comparable
 */
 
-import java.sql.PreparedStatement;
-
 public class Beach implements Comparable<Beach> {
     private String name;      //название
     private float distance;   //расстояние

@@ -4,9 +4,7 @@ import com.javarush.task.task27.task2712.ConsoleHelper;
 import com.javarush.task.task27.task2712.statistic.StatisticManager;
 import com.javarush.task.task27.task2712.statistic.event.CookedOrderEventDataRow;
 
-import java.util.Objects;
 import java.util.Observable;
-import java.util.Set;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Cook extends Observable implements Runnable {

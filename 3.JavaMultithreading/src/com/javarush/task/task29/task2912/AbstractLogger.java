@@ -16,7 +16,7 @@ public abstract class AbstractLogger implements Logger {
         if (next != null) {
             next.inform(message, level);
         }
-    }
+        }
 
     @Override
     public void setNext(Logger next) {

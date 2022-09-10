@@ -18,44 +18,37 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        IncomeData myData = new IncomeData()
-            {
-                @Override
-                public String getCountryCode()
-                    {
-                        return "CA";
-                    }
+        IncomeData myData = new IncomeData() {
+            @Override
+            public String getCountryCode() {
+                return "CA";
+            }
 
-                @Override
-                public String getCompany()
-                    {
-                        return "JavaRush Ltd.";
-                    }
+            @Override
+            public String getCompany() {
+                return "JavaRush Ltd.";
+            }
 
-                @Override
-                public String getContactFirstName()
-                    {
-                        return "Ivan";
-                    }
+            @Override
+            public String getContactFirstName() {
+                return "Ivan";
+            }
 
-                @Override
-                public String getContactLastName()
-                    {
-                        return "Ivanov";
-                    }
+            @Override
+            public String getContactLastName() {
+                return "Ivanov";
+            }
 
-                @Override
-                public int getCountryPhoneCode()
-                    {
-                        return 38;
-                    }
+            @Override
+            public int getCountryPhoneCode() {
+                return 38;
+            }
 
-                @Override
-                public int getPhoneNumber()
-                    {
-                        return 501234567;
-                    }
-            };
+            @Override
+            public int getPhoneNumber() {
+                return 501234567;
+            }
+        };
 
         Customer customer = new IncomeDataAdapter(myData);
         Contact contact = new IncomeDataAdapter(myData);
@@ -70,49 +63,44 @@ public class Solution {
     public static class IncomeDataAdapter implements Customer, Contact {
         private IncomeData data;
 
-        public IncomeDataAdapter(IncomeData data)
-            {
-                this.data = data;
-            }
+        public IncomeDataAdapter(IncomeData data) {
+            this.data = data;
+        }
 
-            //Contact functions.
+        //Contact functions.
         @Override
-        public String getName()
-            {
-                return String.format("%s, %s", data.getContactLastName(), data.getContactFirstName());
-            }
+        public String getName() {
+            return String.format("%s, %s", data.getContactLastName(), data.getContactFirstName());
+        }
 
         @Override
-        public String getPhoneNumber()
-            {
-                String phone = String.format("%010d",data.getPhoneNumber());
-                return String.format("+%d(%s)%s-%s-%s", data.getCountryPhoneCode(), phone.substring(0, 3), phone.substring(3, 6),phone.substring(6, 8), phone.substring(8, 10));
-            }
+        public String getPhoneNumber() {
+            String phone = String.format("%010d", data.getPhoneNumber());
+            return String.format("+%d(%s)%s-%s-%s", data.getCountryPhoneCode(), phone.substring(0, 3), phone.substring(3, 6), phone.substring(6, 8), phone.substring(8, 10));
+        }
 
-            //Customer functions.
+        //Customer functions.
         @Override
-        public String getCompanyName()
-            {
-                return data.getCompany();
-            }
+        public String getCompanyName() {
+            return data.getCompany();
+        }
 
         @Override
-        public String getCountryName()
-            {
-                String country = null;
-                
-                for(Map.Entry<String, String> entry: countries.entrySet()){
-                    if(data.getCountryCode().equals(entry.getKey())){
-                        country = entry.getValue();
-                    }
+        public String getCountryName() {
+            String country = null;
+
+            for (Map.Entry<String, String> entry : countries.entrySet()) {
+                if (data.getCountryCode().equals(entry.getKey())) {
+                    country = entry.getValue();
                 }
-                
-                return country;
             }
+
+            return country;
+        }
     }
 
 
-    public static interface IncomeData {
+    public interface IncomeData {
         String getCountryCode();        //For example: UA
 
         String getCompany();            //For example: JavaRush Ltd.
@@ -126,13 +114,13 @@ public class Solution {
         int getPhoneNumber();           //For example: 501234567
     }
 
-    public static interface Customer {
+    public interface Customer {
         String getCompanyName();        //For example: JavaRush Ltd.
 
         String getCountryName();        //For example: Ukraine
     }
 
-    public static interface Contact {
+    public interface Contact {
         String getName();               //For example: Ivanov, Ivan
 
         String getPhoneNumber();        //For example: +38(050)123-45-67

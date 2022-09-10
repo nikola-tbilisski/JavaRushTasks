@@ -1,6 +1,5 @@
 package com.javarush.task.task21.task2107;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;

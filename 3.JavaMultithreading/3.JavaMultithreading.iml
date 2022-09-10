@@ -8,5 +8,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jsoup-1.13.1" level="project" />
+    <orderEntry type="library" name="io.janusproject.guava" level="project" />
+    <orderEntry type="library" name="apache.commons.collections4" level="project" />
+    <orderEntry type="library" name="junit" level="project" />
   </component>
 </module>

@@ -4,8 +4,6 @@ package com.javarush.task.task30.task3012;
 Получи заданное число
 */
 
-import java.util.StringJoiner;
-
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();

@@ -1,7 +1,6 @@
 package com.javarush.task.task34.task3413;
 
 import java.lang.ref.SoftReference;
-import java.util.Arrays;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

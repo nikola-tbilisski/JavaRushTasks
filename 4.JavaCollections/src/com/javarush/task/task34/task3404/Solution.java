@@ -1,14 +1,6 @@
 package com.javarush.task.task34.task3404;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
-import java.util.LinkedList;
-import java.util.Locale;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-/* 
+/*
 Рекурсия для мат. выражения
 */
 
